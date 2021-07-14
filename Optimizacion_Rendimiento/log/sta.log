@@ -1,7 +1,7 @@
 
-Qflow static timing analysis logfile appended on Mon Jul 12 14:25:54 CST 2021
+Qflow static timing analysis logfile appended on Tue Jul 13 22:12:15 CST 2021
 Running vesta static timing analysis
-vesta --long sistemacompletodes.rtlnopwr.v /usr/share/qflow/tech/osu018/osu018_stdcells.lib
+vesta --long systemcomplete.rtlnopwr.v /usr/share/qflow/tech/osu018/osu018_stdcells.lib
 ----------------------------------------------
 Vesta static timing analysis tool
 for qflow 1.3.17
@@ -10,7 +10,7 @@ for qflow 1.3.17
 
 Parsing library "osu018_stdcells"
 End of library at line 6141
-Parsing module "sistemacompletodes"
+Parsing module "systemcomplete"
 Lib read /usr/share/qflow/tech/osu018/osu018_stdcells.lib:  Processed 6142 lines.
 Verilog netlist read:  Processed 19175 lines.
 Number of paths analyzed:  2022

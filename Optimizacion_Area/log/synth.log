@@ -1,4 +1,4 @@
-Qflow synthesis logfile created on Mon Jul 12 21:30:02 CST 2021
+Qflow synthesis logfile created on Tue Jul 13 14:44:08 CST 2021
 Running yosys for verilog parsing and synthesis
 yosys  -s systemcomplete.ys
 
@@ -1983,15 +1983,15 @@ ABC: ABC command line: "source <abc-temp-dir>/abc.script".
 ABC: 
 ABC: + read_blif <abc-temp-dir>/input.blif 
 ABC: + read_lib -w /usr/share/qflow/tech/osu018/osu018_stdcells.lib 
-ABC: Parsing finished successfully.  Parsing time =     0.00 sec
+ABC: Parsing finished successfully.  Parsing time =     0.02 sec
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "DFFNEGX1".
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "DFFPOSX1".
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "DFFSR".
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "LATCH".
 ABC: Scl_LibertyReadGenlib() skipped three-state cell "TBUFX1".
 ABC: Scl_LibertyReadGenlib() skipped three-state cell "TBUFX2".
-ABC: Library "osu018_stdcells" from "/usr/share/qflow/tech/osu018/osu018_stdcells.lib" has 26 cells (6 skipped: 4 seq; 2 tri-state; 0 no func; 0 dont_use).  Time =     0.00 sec
-ABC: Memory =    0.36 MB. Time =     0.00 sec
+ABC: Library "osu018_stdcells" from "/usr/share/qflow/tech/osu018/osu018_stdcells.lib" has 26 cells (6 skipped: 4 seq; 2 tri-state; 0 no func; 0 dont_use).  Time =     0.02 sec
+ABC: Memory =    0.36 MB. Time =     0.02 sec
 ABC: Warning: Detected 2 multi-output gates (for example, "FAX1").
 ABC: + strash 
 ABC: + scorr 
@@ -2108,10 +2108,10 @@ Optimizing module systemcomplete.
      XNOR2X1                       213
      XOR2X1                         53
 
-End of script. Logfile hash: 59bee6c60c
-CPU: user 3.00s system 0.16s, MEM: 62.65 MB total, 43.53 MB resident
+End of script. Logfile hash: 931259d6e5
+CPU: user 3.17s system 0.16s, MEM: 62.65 MB total, 43.53 MB resident
 Yosys 0.9 (git sha1 1979e0b)
-Time spent: 21% 19x opt_clean (0 sec), 14% 19x opt_expr (0 sec), ...
+Time spent: 18% 19x opt_clean (0 sec), 17% 19x opt_expr (0 sec), ...
 Running getpowerground to determine power and ground net names.
 getpowerground.tcl  /usr/share/qflow/tech/osu018/osu018_stdcells.lef
 Cleaning up output syntax
@@ -2251,4 +2251,4 @@ Running blif2BSpice.
 Running spi2xspice.py
 spi2xspice.py "/usr/share/qflow/tech/osu018/osu018_stdcells.lib" -io_time=1n -time=100p -idelay=10p -odelay=100p -cload=500f systemcomplete.spc systemcomplete.xspice
 
-Synthesis script ended on Mon Jul 12 21:30:10 CST 2021
+Synthesis script ended on Tue Jul 13 14:44:45 CST 2021

@@ -1,4 +1,4 @@
-Qflow placement logfile created on Mon Jul 12 21:30:13 CST 2021
+Qflow placement logfile created on Tue Jul 13 14:46:35 CST 2021
 Running blif2cel to generate input files for graywolf
 blif2cel.tcl --blif /mnt/d/Universidad/UCR/I-2021/Microelectronica/Proyecto2/Proyecto2-Microelectronica/Optimizacion_Area/synthesis/systemcomplete.blif  --lef  /usr/share/qflow/tech/osu018/osu018_stdcells.lef --cel /mnt/d/Universidad/UCR/I-2021/Microelectronica/Proyecto2/Proyecto2-Microelectronica/Optimizacion_Area/layout/systemcomplete.cel 
 Opened BLIF file (/mnt/d/Universidad/UCR/I-2021/Microelectronica/Proyecto2/Proyecto2-Microelectronica/Optimizacion_Area/synthesis/systemcomplete.blif) for reading ...
@@ -1993,4 +1993,4 @@ Files:
 
 Running blif2Verilog.
 Running blif2BSpice.
-Placement script ended on Mon Jul 12 21:36:01 CST 2021
+Placement script ended on Tue Jul 13 14:53:30 CST 2021

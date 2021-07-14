@@ -1,10 +1,10 @@
-Qflow placement logfile created on Mon Jul 12 13:52:32 CST 2021
+Qflow placement logfile created on Tue Jul 13 21:39:04 CST 2021
 Running blif2cel to generate input files for graywolf
-blif2cel.tcl --blif /mnt/d/Universidad/UCR/I-2021/Microelectronica/Proyecto2/Extra/Desempeño/Proyecto_parte_2/synthesis/sistemacompletodes.blif  --lef  /usr/share/qflow/tech/osu018/osu018_stdcells.lef --cel /mnt/d/Universidad/UCR/I-2021/Microelectronica/Proyecto2/Extra/Desempeño/Proyecto_parte_2/layout/sistemacompletodes.cel 
-Opened BLIF file (/mnt/d/Universidad/UCR/I-2021/Microelectronica/Proyecto2/Extra/Desempeño/Proyecto_parte_2/synthesis/sistemacompletodes.blif) for reading ...
-Opened CEL file (/mnt/d/Universidad/UCR/I-2021/Microelectronica/Proyecto2/Extra/Desempeño/Proyecto_parte_2/layout/sistemacompletodes.cel) for writing...
+blif2cel.tcl --blif /mnt/d/Universidad/UCR/I-2021/Microelectronica/Proyecto2/Proyecto2-Microelectronica/Optimizacion_Rendimiento/synthesis/systemcomplete.blif  --lef  /usr/share/qflow/tech/osu018/osu018_stdcells.lef --cel /mnt/d/Universidad/UCR/I-2021/Microelectronica/Proyecto2/Proyecto2-Microelectronica/Optimizacion_Rendimiento/layout/systemcomplete.cel 
+Opened BLIF file (/mnt/d/Universidad/UCR/I-2021/Microelectronica/Proyecto2/Proyecto2-Microelectronica/Optimizacion_Rendimiento/synthesis/systemcomplete.blif) for reading ...
+Opened CEL file (/mnt/d/Universidad/UCR/I-2021/Microelectronica/Proyecto2/Proyecto2-Microelectronica/Optimizacion_Rendimiento/layout/systemcomplete.cel) for writing...
 Loaded /usr/share/qflow/tech/osu018/osu018_stdcells.lef file for reading...
-1st pass of blif file /mnt/d/Universidad/UCR/I-2021/Microelectronica/Proyecto2/Extra/Desempeño/Proyecto_parte_2/synthesis/sistemacompletodes.blif. . .
+1st pass of blif file /mnt/d/Universidad/UCR/I-2021/Microelectronica/Proyecto2/Proyecto2-Microelectronica/Optimizacion_Rendimiento/synthesis/systemcomplete.blif. . .
 Reading macros and/or technology data from LEF file. . .
 LEF file specifies route layer Y pitch as 1
 LEF file specifies route layer X pitch as 0.8
@@ -32,10 +32,10 @@ Parsing macro CLKBUF1
 2nd pass of blif file. . .
 3rd pass of blif file. . .
 Done!
-No sistemacompletodes.cel1 file found for project. . . no partial blockages to apply to layout.
-No sistemacompletodes.cel2 file found for project. . . continuing without pin placement hints
+No systemcomplete.cel1 file found for project. . . no partial blockages to apply to layout.
+No systemcomplete.cel2 file found for project. . . continuing without pin placement hints
 Running GrayWolf placement
-graywolf  sistemacompletodes
+graywolf  systemcomplete
 ERROR[TWgetfont]:font:9x15 not available - using default:fixed
 
 twflow version:2.1 date:Mon May 25 21:15:08 EDT 1992
@@ -839,7 +839,7 @@ Read 19150 objects so far...
 Read 19200 objects so far...
 Read 19250 objects so far...
 Read 19300 objects so far...
-Splitting sistemacompletodes.cel into sistemacompletodes.scel and sistemacompletodes.mcel...
+Splitting systemcomplete.cel into systemcomplete.scel and systemcomplete.mcel...
 	done!
 
 
@@ -862,6 +862,8 @@ config switches:
 	Graphics mode on
 	config will inherit window
 
+
+Note: restore state file exists:systemcomplete
 
 
 config terminated abnormally with 1 error[s] and 0 warning[s]
@@ -4897,10 +4899,10 @@ TimberWolfSC terminated abnormally with 1 error[s] and 0 warning[s]
 twflow terminated abnormally with 1 error[s] and 0 warning[s]
 
 Running getfillcell to determine cell to use for fill.
-getfillcell.tcl sistemacompletodes  /usr/share/qflow/tech/osu018/osu018_stdcells.lef FILL
+getfillcell.tcl systemcomplete  /usr/share/qflow/tech/osu018/osu018_stdcells.lef FILL
 Using cell FILL for fill
 Running place2def to translate graywolf output to DEF format.
-place2def.tcl sistemacompletodes FILL 
+place2def.tcl systemcomplete FILL 
 Running place2def.tcl
 DEF database: 100 units per micron
 Limits: xbot = -239 ybot = -465.0 xtop = 85495.0 ytop = 83800
@@ -4918,9 +4920,9 @@ Summary: Total components = 19161
   Other cells = 19161
 Done with place2def.tcl
 Running addspacers to generate power stripes and align cell right edge
-addspacers.tcl  -stripe 2.0 50.0 PG sistemacompletodes  /usr/share/qflow/tech/osu018/osu018_stdcells.lef FILL
+addspacers.tcl  -stripe 2.0 50.0 PG systemcomplete  /usr/share/qflow/tech/osu018/osu018_stdcells.lef FILL
 Reading FILL macros from LEF file.
-Reading DEF file sistemacompletodes.def. . .
+Reading DEF file systemcomplete.def. . .
 Number of rows is 84
 Longest row has width 854.8 um
 addspacers:  Inserting 17 stripes of width 1.6 um (2.0 um requested)
@@ -4933,25 +4935,25 @@ Number of rows = 84
 Adjusting obstructions for power striping
 Done with addspacers.tcl
 Running arrangepins to adjust pin positions for optimal routing.
-arrangepins.tcl  sistemacompletodes
-Reading info file sistemacompletodes.info. . .
-Reading DEF file sistemacompletodes.def. . .
+arrangepins.tcl  systemcomplete
+Reading info file systemcomplete.info. . .
+Reading DEF file systemcomplete.def. . .
 Recalculating pin positions
-Writing DEF file sistemacompletodes_mod.def. . .
+Writing DEF file systemcomplete_mod.def. . .
 Done with arrangepins.tcl
-blifanno.tcl /mnt/d/Universidad/UCR/I-2021/Microelectronica/Proyecto2/Extra/Desempeño/Proyecto_parte_2/synthesis/sistemacompletodes.blif sistemacompletodes.def /mnt/d/Universidad/UCR/I-2021/Microelectronica/Proyecto2/Extra/Desempeño/Proyecto_parte_2/synthesis/sistemacompletodes_anno.blif
+blifanno.tcl /mnt/d/Universidad/UCR/I-2021/Microelectronica/Proyecto2/Proyecto2-Microelectronica/Optimizacion_Rendimiento/synthesis/systemcomplete.blif systemcomplete.def /mnt/d/Universidad/UCR/I-2021/Microelectronica/Proyecto2/Proyecto2-Microelectronica/Optimizacion_Rendimiento/synthesis/systemcomplete_anno.blif
 Running blifanno.tcl
-Reading DEF file sistemacompletodes.def. . .
+Reading DEF file systemcomplete.def. . .
 Done with blifanno.tcl
 
 Generating RTL verilog and SPICE netlist file in directory
-   /mnt/d/Universidad/UCR/I-2021/Microelectronica/Proyecto2/Extra/Desempeño/Proyecto_parte_2/synthesis
+   /mnt/d/Universidad/UCR/I-2021/Microelectronica/Proyecto2/Proyecto2-Microelectronica/Optimizacion_Rendimiento/synthesis
 Files:
-   Verilog: /mnt/d/Universidad/UCR/I-2021/Microelectronica/Proyecto2/Extra/Desempeño/Proyecto_parte_2/synthesis/sistemacompletodes.rtl.v
-   Verilog: /mnt/d/Universidad/UCR/I-2021/Microelectronica/Proyecto2/Extra/Desempeño/Proyecto_parte_2/synthesis/sistemacompletodes.rtlnopwr.v
-   Verilog: /mnt/d/Universidad/UCR/I-2021/Microelectronica/Proyecto2/Extra/Desempeño/Proyecto_parte_2/synthesis/sistemacompletodes.rtlbb.v
-   Spice:   /mnt/d/Universidad/UCR/I-2021/Microelectronica/Proyecto2/Extra/Desempeño/Proyecto_parte_2/synthesis/sistemacompletodes.spc
+   Verilog: /mnt/d/Universidad/UCR/I-2021/Microelectronica/Proyecto2/Proyecto2-Microelectronica/Optimizacion_Rendimiento/synthesis/systemcomplete.rtl.v
+   Verilog: /mnt/d/Universidad/UCR/I-2021/Microelectronica/Proyecto2/Proyecto2-Microelectronica/Optimizacion_Rendimiento/synthesis/systemcomplete.rtlnopwr.v
+   Verilog: /mnt/d/Universidad/UCR/I-2021/Microelectronica/Proyecto2/Proyecto2-Microelectronica/Optimizacion_Rendimiento/synthesis/systemcomplete.rtlbb.v
+   Spice:   /mnt/d/Universidad/UCR/I-2021/Microelectronica/Proyecto2/Proyecto2-Microelectronica/Optimizacion_Rendimiento/synthesis/systemcomplete.spc
 
 Running blif2Verilog.
 Running blif2BSpice.
-Placement script ended on Mon Jul 12 14:20:48 CST 2021
+Placement script ended on Tue Jul 13 22:08:55 CST 2021
