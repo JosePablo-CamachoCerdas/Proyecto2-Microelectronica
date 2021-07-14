@@ -5,12 +5,12 @@ Para correr la simulación del RTL de ambas arquitecturas:
 ## Arquitectura optimizada en área
 Correr los siguientes comandos en terminal:
 
-$ cd Optimizacion_Area/RTL
-$ make area
+- cd Optimizacion_Area/RTL
+- make area
 
 
 ## Arquitectura optimizada en desempeño
 Correr los siguientes comandos en terminal:
 
-$ cd Optimizacion_Rendimiento/RTL
-$ make rendimiento
+- cd Optimizacion_Rendimiento/RTL
+- make rendimiento
